@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   title: "Kelly Baldwin - Bay Area Real Estate Expert | eXp Realty",
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kelly Baldwin - Bay Area Real Estate Expert",
     description: "Helping you go from stressed to sold in the Bay Area",
-    url: "https://kellybaldwin.com",
+    url: "https://www.kellybaldwin.net/",
     siteName: "Kelly Baldwin Real Estate",
     locale: "en_US",
     type: "website",
@@ -54,8 +52,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`antialiased min-h-screen bg-background overscroll-none relative font-sans`}
+      >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
