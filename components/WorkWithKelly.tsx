@@ -25,11 +25,11 @@ export default function WorkWithKelly() {
         <div className="w-24 h-0.5 bg-white mx-auto mb-8"></div>
 
         <p className="text-xl md:text-2xl italic mb-4">
-          "Turning Houses into Homes, One Key at a Time"
+          &quot;Turning Houses into Homes, One Key at a Time&quot;
         </p>
 
         <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Ready to make your Bay Area real estate dreams a reality? Let's start
+          Ready to make your Bay Area real estate dreams a reality? Let&apos;s start
           your journey today.
         </p>
 

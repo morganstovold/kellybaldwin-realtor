@@ -50,7 +50,7 @@ export default function FeaturedListings() {
           <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover exceptional properties throughout the greater Bay Area. From modern family homes 
-            to charming Victorians, find your dream home in Solano County's most desirable neighborhoods.
+            to charming Victorians, find your dream home in Solano County&apos;s most desirable neighborhoods.
           </p>
         </div>
 

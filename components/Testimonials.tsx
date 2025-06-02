@@ -81,7 +81,7 @@ export default function Testimonials() {
       <div>
         <Quote className="text-gray-300 mb-4" size={40} />
         <blockquote className="text-lg text-gray-700 leading-relaxed mb-6">
-          "{testimonial.content}"
+          &quot;{testimonial.content}&quot;
         </blockquote>
       </div>
       
@@ -125,7 +125,7 @@ export default function Testimonials() {
           </h2>
           <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear from Kelly's satisfied clients throughout the Bay Area who have successfully 
+            Hear from Kelly&apos;s satisfied clients throughout the Bay Area who have successfully 
             bought and sold homes with her expert guidance and personalized, enjoyable service.
           </p>
         </div>
@@ -160,7 +160,7 @@ export default function Testimonials() {
         {/* Call to Action */}
         <div className="text-center">
           <p className="text-lg text-gray-600 mb-6">
-            Ready to join Kelly's satisfied clients?
+            Ready to join Kelly&apos;s satisfied clients?
           </p>
           <Button size="lg">
             Start Your Journey Today
