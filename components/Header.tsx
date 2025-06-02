@@ -1,26 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
-
-export const NavItems = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Properties",
-    href: "/properties",
-  },
-];
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const { scrollY } = useScroll();
-  const backgroundOpacity = useTransform(scrollY, [0, 50], [0, 1]);
 
   useEffect(() => {
     const scrollThreshold = 10;
@@ -51,41 +39,36 @@ export default function Header() {
 
   return (
     <motion.header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-sans">
-      <div className="flex h-20 mx-auto">
+      <div className="flex h-16 md:h-20 mx-auto">
         <motion.div
           className={cn(
-            "flex-1 flex items-center relative overflow-hidden px-10 transition-all duration-300 text-4xl gap-6 font-normal tracking-wider z-10 uppercase text-white",
+            "flex-1 h-full flex items-center relative overflow-hidden px-4 md:px-10 transition-all duration-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl gap-2 sm:gap-4 md:gap-6 font-normal tracking-wider z-10 uppercase text-white",
             scrolled ? "bg-black" : "bg-transparent"
           )}
         >
           <span className="font-light">KB</span>
           <Separator
             orientation="vertical"
-            className="!h-2/3 mt-2 opacity-50"
+            className="!h-2/3 opacity-50 hidden sm:block"
           />
-          <span className="font-normal">Kelly Baldwin</span>
+          <span className="font-normal hidden sm:inline">Kelly Baldwin</span>
         </motion.div>
         <motion.div
           className={cn(
-            "flex-1 flex items-center justify-center gap-6 relative overflow-hidden px-10 transition-all duration-300",
+            "flex-1 h-full flex items-center justify-center gap-2 sm:gap-4 md:gap-6 relative overflow-hidden px-4 md:px-10 transition-all duration-300",
             scrolled ? "bg-white" : "bg-transparent"
           )}
         >
-          <div className="flex w-full justify-between gap-6 relative z-10">
-            {/* Menu Button */}
-            <button
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-black`}
-            >
-              <Menu size={20} />
-              <span>Menu</span>
-            </button>
+          <div className="flex w-full justify-between gap-2 sm:gap-4 md:gap-6 relative z-10">
+            <Button variant="ghost" className="text-sm sm:text-base p-2 sm:p-3">
+              <Menu className="size-4 sm:size-5 md:size-6" />
+              <span className="hidden sm:inline ml-1 sm:ml-2">Menu</span>
+            </Button>
 
-            {/* Contact Kelly Button */}
-            <button
-              className={`px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 text-black`}
-            >
-              Contact Kelly
-            </button>
+            <Button variant="ghost" className="text-sm sm:text-base p-2 sm:p-3">
+              <span className="hidden sm:inline">Contact Kelly</span>
+              <span className="sm:hidden">Contact</span>
+            </Button>
           </div>
         </motion.div>
       </div>
