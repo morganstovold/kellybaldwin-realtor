@@ -117,10 +117,10 @@ export default function Testimonials() {
 
   return (
     <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-serif tracking-widest mb-4">
+          <h2 className="text-4xl font-serif tracking-widest mb-4">
             CLIENT TESTIMONIALS
           </h2>
           <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>

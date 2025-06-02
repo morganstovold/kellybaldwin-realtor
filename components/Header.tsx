@@ -42,21 +42,21 @@ export default function Header() {
       <div className="flex h-16 md:h-20 mx-auto">
         <motion.div
           className={cn(
-            "flex-1 h-full flex items-center relative overflow-hidden px-4 md:px-10 transition-all duration-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl gap-2 sm:gap-4 md:gap-6 font-normal tracking-wider z-10 uppercase text-white",
-            scrolled ? "bg-black" : "bg-transparent"
+            "flex-1 h-full flex items-center relative overflow-hidden px-4 md:px-10 transition-all duration-300 text-lg sm:text-2xl md:text-4xl gap-2 sm:gap-4 md:gap-6 font-normal tracking-wider z-10 uppercase text-white",
+            scrolled ? "bg-black" : "bg-black lg:bg-transparent"
           )}
         >
-          <span className="font-light">KB</span>
+          <span className="font-light hidden sm:inline">KB</span>
           <Separator
             orientation="vertical"
             className="!h-2/3 opacity-50 hidden sm:block"
           />
-          <span className="font-normal hidden sm:inline">Kelly Baldwin</span>
+          <span className="font-normal">Kelly Baldwin</span>
         </motion.div>
         <motion.div
           className={cn(
             "flex-1 h-full flex items-center justify-center gap-2 sm:gap-4 md:gap-6 relative overflow-hidden px-4 md:px-10 transition-all duration-300",
-            scrolled ? "bg-white" : "bg-transparent"
+            scrolled ? "bg-white" : "bg-white lg:bg-transparent"
           )}
         >
           <div className="flex w-full justify-between gap-2 sm:gap-4 md:gap-6 relative z-10">

@@ -44,7 +44,7 @@ export default function FeaturedListings() {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-serif tracking-widest mb-4">
+          <h2 className="text-3xl lg:text-4xl font-serif tracking-widest mb-4">
             FEATURED LISTINGS
           </h2>
           <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
