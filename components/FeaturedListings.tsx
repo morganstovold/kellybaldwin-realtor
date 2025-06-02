@@ -102,8 +102,8 @@ export default function FeaturedListings() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-          <Button size="lg" variant="outline" className="mr-4">
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
+          <Button size="lg" variant="outline">
             View All Properties
           </Button>
           <Button size="lg">
