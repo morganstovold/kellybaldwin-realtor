@@ -26,15 +26,15 @@ export default function Footer() {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
                 <Instagram className="w-5 h-5 text-black" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
+              </a> */}
+              <Link href="https://www.instagram.com/kellybaldwin_realtor" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
+                <Instagram className="w-5 h-5 text-black" />
+              </Link>
+              <Link href="https://www.facebook.com/kelly.nicole.796774" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
                 <Facebook className="w-5 h-5 text-black" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
-                <Linkedin className="w-5 h-5 text-black" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gray-600" />
-                <span className="text-gray-700">(707) 555-0123</span>
+                <span className="text-gray-700">(707) 319-6392</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gray-600" />
@@ -55,7 +55,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gray-600 mt-1" />
                 <div className="text-gray-700">
-                  <div>Greater Bay Area</div>
+                  <div>Bay Area</div>
                   <div>Solano County</div>
                 </div>
               </div>
@@ -79,12 +79,6 @@ export default function Footer() {
               </a>
               <a href="#" className="block text-gray-700 hover:text-black transition-colors">
                 Seller Services
-              </a>
-              <a href="#" className="block text-gray-700 hover:text-black transition-colors">
-                Market Analysis
-              </a>
-              <a href="#" className="block text-gray-700 hover:text-black transition-colors">
-                Free Consultation
               </a>
             </div>
           </div>

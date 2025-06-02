@@ -80,7 +80,7 @@ export default function Header() {
           <div className="flex w-full justify-between gap-2 sm:gap-4 md:gap-6 relative z-10">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" className="text-sm sm:text-base p-2 sm:p-3">
+                <Button variant="ghost" className="text-sm sm:text-base p-2">
                   <Menu className="size-4 sm:size-5 md:size-6" />
                   <span className="hidden sm:inline ml-1 sm:ml-2">Menu</span>
                 </Button>
