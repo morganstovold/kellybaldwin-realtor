@@ -13,7 +13,7 @@ export default function MeetKelly() {
             </h2>
             <div className="w-24 h-0.5 bg-black"></div>
             <p className="text-xl text-gray-600 mt-4 italic">
-              "Turning Houses into Homes, One Key at a Time."
+              &quot;Turning Houses into Homes, One Key at a Time.&quot;
             </p>
           </div>
 
@@ -26,11 +26,11 @@ export default function MeetKelly() {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Kelly's deep-rooted connection to the Bay Area, combined with her
+              Kelly&apos;s deep-rooted connection to the Bay Area, combined with her
               passion for helping families find their perfect home, makes her an
               invaluable partner in your real estate journey. She understands
-              that buying or selling a home is one of life's most significant
-              decisions, and she's committed to making the process enjoyable and
+              that buying or selling a home is one of life&apos;s most significant
+              decisions, and she&apos;s committed to making the process enjoyable and
               stress-free while securing the best possible outcome for her
               clients.
             </p>
