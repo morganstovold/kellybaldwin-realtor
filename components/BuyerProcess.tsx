@@ -51,7 +51,7 @@ export default function BuyerProcess() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              I'll guide you through every step of the home buying process, ensuring 
+              I&apos;ll guide you through every step of the home buying process, ensuring 
               you feel confident and informed from start to finish.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function BuyerProcess() {
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
               Every successful home purchase starts with understanding your needs, budget, 
-              and timeline. Let's schedule a consultation to discuss your goals and create 
+              and timeline. Let&apos;s schedule a consultation to discuss your goals and create 
               a personalized plan for finding your perfect home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

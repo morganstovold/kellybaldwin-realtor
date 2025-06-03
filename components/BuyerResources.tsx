@@ -89,7 +89,7 @@ export default function BuyerResources() {
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed mb-6">
                   Down payment requirements vary by loan type. Conventional loans can be as low as 3%, 
-                  FHA loans 3.5%, and VA loans 0% for qualified veterans. I'll help you explore all options.
+                  FHA loans 3.5%, and VA loans 0% for qualified veterans. I&apos;ll help you explore all options.
                 </p>
               </div>
               
@@ -118,7 +118,7 @@ export default function BuyerResources() {
                   Should I get pre-approved?
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed mb-6">
-                  Absolutely! Pre-approval shows sellers you're serious and can close the deal. 
+                  Absolutely! Pre-approval shows sellers you&apos;re serious and can close the deal. 
                   It also helps you understand your budget and shop with confidence.
                 </p>
               </div>

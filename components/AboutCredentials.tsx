@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Shield, Star, Building, Users } from "lucide-react";
+import { Award, GraduationCap, Shield, Star } from "lucide-react";
 
 const credentials = [
   {
@@ -109,9 +109,9 @@ export default function AboutCredentials() {
           {/* Recognition Quote */}
           <div className="mt-16 text-center bg-gray-50 rounded-lg p-8 lg:p-12">
             <blockquote className="text-xl lg:text-2xl font-serif italic text-gray-800 mb-6 leading-relaxed">
-              "Excellence in real estate isn't just about closing deals—it's about 
+              &quot;Excellence in real estate isn&apos;t just about closing deals—it&apos;s about 
               building trust, providing exceptional service, and creating lasting 
-              relationships with every client."
+              relationships with every client.&quot;
             </blockquote>
             <div className="text-gray-600 font-medium">
               — Kelly Baldwin, REALTOR®

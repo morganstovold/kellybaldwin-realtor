@@ -62,7 +62,7 @@ export default function SellerTestimonials() {
             <Quote className="text-gray-300 mb-6" size={48} />
             
             <blockquote className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-8">
-              "{sellerTestimonials[activeTestimonial].content}"
+              &quot;{sellerTestimonials[activeTestimonial].content}&quot;
             </blockquote>
             
             <div className="flex items-center justify-between">

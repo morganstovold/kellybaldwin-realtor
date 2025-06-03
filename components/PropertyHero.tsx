@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { MapPin, Bed, Bath, Square, Home, Calendar, Car } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { MapPin, Bed, Bath, Square, Home, Calendar } from "lucide-react";
 
 interface Property {
   id: number;
@@ -42,11 +40,6 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
       month: "long",
       day: "numeric",
     }).format(new Date(date));
-  };
-
-  const formatBathrooms = (bathrooms: string) => {
-    const num = parseFloat(bathrooms);
-    return num === 1 ? "1 bath" : `${num} baths`;
   };
 
   return (

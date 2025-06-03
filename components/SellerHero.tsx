@@ -24,9 +24,9 @@ export default function SellerHero() {
             </span>
           </h1>
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-            Maximize your home's value with strategic marketing, expert pricing, and 
-            skilled negotiation. I'll help you sell your property quickly and for the 
-            best possible price in today's Bay Area market.
+            Maximize your home&apos;s value with strategic marketing, expert pricing, and 
+            skilled negotiation. I&apos;ll help you sell your property quickly and for the 
+            best possible price in today&apos;s Bay Area market.
           </p>
           <div className="space-y-4 mb-6">
             <div className="flex items-center gap-3">

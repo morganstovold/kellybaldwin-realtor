@@ -26,7 +26,7 @@ export default function BuyerHero() {
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
             From first-time homebuyers to seasoned investors, I provide expert guidance 
             throughout your entire home buying journey. Let me help you find the perfect 
-            property and negotiate the best terms in today's competitive Bay Area market.
+            property and negotiate the best terms in today&apos;s competitive Bay Area market.
           </p>
           <div className="space-y-4 mb-6">
             <div className="flex items-center gap-3">

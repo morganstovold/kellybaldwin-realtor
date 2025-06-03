@@ -13,7 +13,7 @@ export default function BuyerContact() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Let's start your home buying journey today. I'm here to guide you 
+              Let&apos;s start your home buying journey today. I&apos;m here to guide you 
               through every step and help you find the perfect property.
             </p>
           </div>
@@ -73,12 +73,12 @@ export default function BuyerContact() {
                 YOUR HOME BUYING JOURNEY STARTS HERE
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Whether you're a first-time buyer, looking to upgrade, or relocating to the Bay Area, 
-                I'm committed to making your home buying experience smooth, successful, and enjoyable. 
-                Let's discuss your goals and create a personalized plan to find your perfect home.
+                Whether you&apos;re a first-time buyer, looking to upgrade, or relocating to the Bay Area, 
+                I&apos;m committed to making your home buying experience smooth, successful, and enjoyable. 
+                Let&apos;s discuss your goals and create a personalized plan to find your perfect home.
               </p>
               <div className="text-gray-600 italic">
-                "I'm not just here to help you buy a house—I'm here to help you find your home."
+                &quot;I&apos;m not just here to help you buy a house—I&apos;m here to help you find your home.&quot;
               </div>
               <div className="text-gray-700 font-medium mt-2">
                 — Kelly Baldwin

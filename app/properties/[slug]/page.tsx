@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { MapPin, Bed, Bath, Square, Calendar, Home, Car } from "lucide-react";
+import { Home } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { getPropertiesSlugs, getPropertyBySlug } from "@/lib/db/queries";
 import PropertyHero from "@/components/PropertyHero";

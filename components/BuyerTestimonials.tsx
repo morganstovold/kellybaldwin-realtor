@@ -52,7 +52,7 @@ export default function BuyerTestimonials() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hear from satisfied buyers who found their perfect homes with Kelly's 
+              Hear from satisfied buyers who found their perfect homes with Kelly&apos;s 
               expert guidance and dedicated service.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function BuyerTestimonials() {
             <Quote className="text-gray-300 mb-6" size={48} />
             
             <blockquote className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-8">
-              "{buyerTestimonials[activeTestimonial].content}"
+              &quot;{buyerTestimonials[activeTestimonial].content}&quot;
             </blockquote>
             
             <div className="flex items-center justify-between">

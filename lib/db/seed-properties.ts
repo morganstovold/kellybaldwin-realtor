@@ -49,7 +49,7 @@ interface PropertyDetailResponse {
   Latitude: string;
   Longitude: string;
   Directions: string;
-  OpenHouses: any[];
+  OpenHouses: unknown[];
 }
 
 // Safe truncation helpers

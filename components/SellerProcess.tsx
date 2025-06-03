@@ -51,7 +51,7 @@ export default function SellerProcess() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From initial consultation to closing day, I'll guide you through 
+              From initial consultation to closing day, I&apos;ll guide you through 
               every step to ensure a smooth and successful sale.
             </p>
           </div>

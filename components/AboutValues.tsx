@@ -76,22 +76,22 @@ export default function AboutValues() {
             </h3>
             <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                When you choose to work with me, you're not just getting a real estate agent—
-                you're gaining a trusted advisor, skilled negotiator, and dedicated advocate 
+                When you choose to work with me, you&apos;re not just getting a real estate agent—
+                you&apos;re gaining a trusted advisor, skilled negotiator, and dedicated advocate 
                 who will be by your side every step of the way.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 I promise to listen carefully to your needs, provide honest market insights, 
                 negotiate fiercely on your behalf, and make the entire process as smooth and 
-                stress-free as possible. Your success is my success, and I'm committed to 
+                stress-free as possible. Your success is my success, and I&apos;m committed to 
                 exceeding your expectations.
               </p>
               <div className="pt-6">
                 <div className="text-xl font-serif italic text-gray-800">
-                  "Turning Houses into Homes, One Key at a Time"
+                  &quot;Turning Houses into Homes, One Key at a Time&quot;
                 </div>
                 <div className="text-gray-600 mt-2">
-                  This isn't just my tagline—it's my commitment to you.
+                  This isn&apos;t just my tagline—it&apos;s my commitment to you.
                 </div>
               </div>
             </div>

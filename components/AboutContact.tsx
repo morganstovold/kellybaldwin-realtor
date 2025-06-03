@@ -9,11 +9,11 @@ export default function AboutContact() {
           {/* Header */}
           <div className="mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif tracking-widest mb-4">
-              LET'S WORK TOGETHER
+              LET&apos;S WORK TOGETHER
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ready to start your real estate journey? I'd love to learn about your 
+              Ready to start your real estate journey? I&apos;d love to learn about your 
               goals and show you how I can help make them a reality.
             </p>
           </div>
@@ -70,14 +70,14 @@ export default function AboutContact() {
                 READY TO GET STARTED?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Whether you're buying your first home, selling to upgrade, or exploring 
-                investment opportunities, I'm here to guide you through every step. Let's 
+                Whether you&apos;re buying your first home, selling to upgrade, or exploring 
+                investment opportunities, I&apos;m here to guide you through every step. Let&apos;s 
                 schedule a no-obligation consultation to discuss your goals and create a 
                 personalized plan for your success.
               </p>
               <div className="text-gray-600 italic">
-                "I look forward to helping you with your real estate journey and turning 
-                your dreams into reality."
+                &quot;I look forward to helping you with your real estate journey and turning 
+                your dreams into reality.&quot;
               </div>
               <div className="text-gray-700 font-medium mt-2">
                 — Kelly Baldwin

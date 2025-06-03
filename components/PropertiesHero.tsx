@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Search, MapPin, Home } from "lucide-react";
+import { MapPin, Home } from "lucide-react";
 
 export default function PropertiesHero() {
   return (
@@ -50,7 +50,7 @@ export default function PropertiesHero() {
           <p className="text-base sm:text-lg leading-relaxed text-gray-600">
             Discover exceptional properties throughout the greater Bay Area.
             From modern family homes to charming Victorians, explore our curated
-            collection of premium listings in Solano County's most desirable
+            collection of premium listings in Solano County&apos;s most desirable
             neighborhoods.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">

@@ -1,6 +1,5 @@
-import { desc, asc, eq, and, or, gte, lte, like, inArray, sql, count } from "drizzle-orm";
+import { desc, asc, eq, and, or, gte, lte, like, sql, count } from "drizzle-orm";
 import db, { schema } from "../db";
-import type { Property, FeaturedProperty } from "./schema";
 
 const { properties, featuredProperties, propertyPhotos } = schema;
 

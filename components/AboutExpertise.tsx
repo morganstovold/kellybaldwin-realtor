@@ -125,16 +125,16 @@ export default function AboutExpertise() {
               MY PROMISE TO YOU
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-              When you choose to work with me, you're gaining a trusted advisor, skilled negotiator, 
+              When you choose to work with me, you&apos;re gaining a trusted advisor, skilled negotiator, 
               and dedicated advocate who combines deep local knowledge with cutting-edge technology, 
               comprehensive market analysis with personal relationships, and proven negotiation skills 
               with genuine care for your success.
             </p>
             <div className="text-xl font-serif italic text-gray-800">
-              "Turning Houses into Homes, One Key at a Time"
+              &quot;Turning Houses into Homes, One Key at a Time&quot;
             </div>
             <div className="text-gray-600 mt-2">
-              This isn't just my tagline—it's my commitment to you.
+              This isn&apos;t just my tagline—it&apos;s my commitment to you.
             </div>
           </div>
         </div>

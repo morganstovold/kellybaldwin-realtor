@@ -13,7 +13,7 @@ export default function AboutStory() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Born and raised in Solano County, I've witnessed firsthand the growth 
+              Born and raised in Solano County, I&apos;ve witnessed firsthand the growth 
               and transformation of the Bay Area real estate market.
             </p>
           </div>
@@ -59,15 +59,15 @@ export default function AboutStory() {
                   PASSION MEETS EXPERTISE
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  With years of experience in the Bay Area market, I've helped 
-                  hundreds of families navigate one of life's biggest decisions. 
-                  Whether you're a first-time buyer, growing family, or looking 
+                  With years of experience in the Bay Area market, I&apos;ve helped 
+                  hundreds of families navigate one of life&apos;s biggest decisions. 
+                  Whether you&apos;re a first-time buyer, growing family, or looking 
                   to downsize, I bring the expertise and personal attention that 
                   makes all the difference.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   I believe in building relationships that last long after closing day. 
-                  Many of my clients have become lifelong friends, and there's nothing 
+                  Many of my clients have become lifelong friends, and there&apos;s nothing 
                   more rewarding than seeing families thrive in their new homes.
                 </p>
               </div>

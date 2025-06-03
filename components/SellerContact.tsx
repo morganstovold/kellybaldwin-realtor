@@ -13,7 +13,7 @@ export default function SellerContact() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Let's discuss your selling goals and create a customized marketing 
+              Let&apos;s discuss your selling goals and create a customized marketing 
               strategy to get you the best possible price for your home.
             </p>
           </div>
@@ -70,16 +70,16 @@ export default function SellerContact() {
           <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
             <div className="max-w-3xl mx-auto">
               <h3 className="text-xl lg:text-2xl font-serif tracking-wider mb-4">
-                LET'S MAXIMIZE YOUR HOME'S VALUE
+                LET&apos;S MAXIMIZE YOUR HOME&apos;S VALUE
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Selling your home is a major decision, and you deserve an agent who will work 
                 tirelessly to get you the best possible outcome. From strategic pricing to 
-                comprehensive marketing to skilled negotiation, I'm committed to exceeding 
+                comprehensive marketing to skilled negotiation, I&apos;m committed to exceeding 
                 your expectations and making the process as smooth as possible.
               </p>
               <div className="text-gray-600 italic">
-                "Your success is my success. Let's work together to achieve your selling goals."
+                &quot;Your success is my success. Let&apos;s work together to achieve your selling goals.&quot;
               </div>
               <div className="text-gray-700 font-medium mt-2">
                 — Kelly Baldwin

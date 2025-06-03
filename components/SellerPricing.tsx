@@ -106,7 +106,7 @@ export default function SellerPricing() {
               </h4>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  I'll provide you with a comprehensive market analysis that includes:
+                  I&apos;ll provide you with a comprehensive market analysis that includes:
                 </p>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start gap-2">
@@ -128,7 +128,7 @@ export default function SellerPricing() {
                 </ul>
                 <div className="pt-4 border-t border-gray-200">
                   <p className="text-black font-medium italic">
-                    "The right price attracts the right buyers and maximizes your return."
+                    &quot;The right price attracts the right buyers and maximizes your return.&quot;
                   </p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function SellerPricing() {
               GET YOUR FREE HOME VALUATION
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-              Curious about your home's current market value? I'll provide a comprehensive 
+              Curious about your home&apos;s current market value? I&apos;ll provide a comprehensive 
               analysis with no obligation, so you can make informed decisions about your next move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

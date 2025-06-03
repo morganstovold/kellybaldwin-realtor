@@ -45,8 +45,8 @@ export default function BuyerBenefits() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              When you work with me, you're getting more than just a real estate agent—
-              you're gaining a dedicated advocate and trusted advisor.
+              When you work with me, you&apos;re getting more than just a real estate agent—
+              you&apos;re gaining a dedicated advocate and trusted advisor.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ export default function BuyerBenefits() {
                 FIRST-TIME BUYER SPECIALIST
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Buying your first home can feel overwhelming, but it doesn't have to be. 
+                Buying your first home can feel overwhelming, but it doesn&apos;t have to be. 
                 I specialize in guiding first-time buyers through every step of the process, 
                 explaining everything in detail and ensuring you feel confident and informed.
               </p>
@@ -83,21 +83,21 @@ export default function BuyerBenefits() {
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-3">Education First</h4>
                   <p className="text-gray-600 text-sm">
-                    I'll teach you about the market, financing options, and what to expect 
+                    I&apos;ll teach you about the market, financing options, and what to expect 
                     so you can make informed decisions.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-3">Patient Guidance</h4>
                   <p className="text-gray-600 text-sm">
-                    No question is too small. I'm here to support you with patience 
+                    No question is too small. I&apos;m here to support you with patience 
                     and understanding throughout your journey.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-3">Lifetime Support</h4>
                   <p className="text-gray-600 text-sm">
-                    My relationship with you doesn't end at closing. I'm here for 
+                    My relationship with you doesn&apos;t end at closing. I&apos;m here for 
                     ongoing advice and future real estate needs.
                   </p>
                 </div>
