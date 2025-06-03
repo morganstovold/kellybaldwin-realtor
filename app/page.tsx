@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "../components/Hero";
 import MeetKelly from "../components/MeetKelly";
@@ -9,7 +8,6 @@ import WorkWithKelly from "../components/WorkWithKelly";
 export default function Home() {
   return (
     <div className="h-full">
-      <Header />
       <Hero />
       <MeetKelly />
       <FeaturedListings />

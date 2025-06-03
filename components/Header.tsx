@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -15,43 +15,14 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 
-export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+export default function Header({ scrolled }: { scrolled: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const scrollThreshold = 10;
-
-    let timeoutId: ReturnType<typeof setTimeout> | null = null;
-
-    const handleScroll = () => {
-      if (timeoutId) return;
-
-      timeoutId = setTimeout(() => {
-        const isScrolled = window.scrollY > scrollThreshold;
-        if (isScrolled !== scrolled) {
-          setScrolled(isScrolled);
-        }
-        timeoutId = null;
-      }, 10);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      if (timeoutId) clearTimeout(timeoutId);
-    };
-  }, [scrolled]);
 
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/properties", label: "Properties" },
-    { href: "#about", label: "About Kelly" },
+    { href: "/about", label: "About Kelly" },
     { href: "#services", label: "Services" },
-    { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -64,7 +35,9 @@ export default function Header() {
             scrolled ? "bg-black" : "bg-black lg:bg-transparent"
           )}
         >
-          <span className="font-light hidden sm:inline">KB</span>
+          <span className="font-light hidden sm:inline">
+            KB
+          </span>
           <Separator
             orientation="vertical"
             className="!h-2/3 opacity-50 hidden sm:block"

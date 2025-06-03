@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
+import HeaderProvider from "@/components/HeaderProvider";
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
@@ -55,7 +56,7 @@ export default function RootLayout({
       <body
         className={`antialiased min-h-screen bg-background overscroll-none relative font-sans`}
       >
-        {children}
+        <HeaderProvider>{children}</HeaderProvider>
         <Analytics />
         <SpeedInsights />
       </body>

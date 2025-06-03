@@ -18,21 +18,24 @@ export default function Footer() {
                 &quot;Turning Houses into Homes, One Key at a Time&quot;
               </p>
               <p className="text-gray-700 leading-relaxed max-w-md">
-                Your trusted Bay Area real estate expert with deep local knowledge 
-                and a commitment to making your real estate experience both enjoyable 
-                and successful.
+                Your trusted Bay Area real estate expert with deep local
+                knowledge and a commitment to making your real estate experience
+                both enjoyable and successful.
               </p>
             </div>
-            
+
             {/* Social Media */}
             <div className="flex space-x-4">
-              {/* <a href="#" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
-                <Instagram className="w-5 h-5 text-black" />
-              </a> */}
-              <Link href="https://www.instagram.com/kellybaldwin_realtor" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
+              <Link
+                href="https://www.instagram.com/kellybaldwin_realtor"
+                className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors"
+              >
                 <Instagram className="w-5 h-5 text-black" />
               </Link>
-              <Link href="https://www.facebook.com/kelly.nicole.796774" className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors">
+              <Link
+                href="https://www.facebook.com/kelly.nicole.796774"
+                className="w-10 h-10 bg-black/10 rounded-full flex items-center justify-center hover:bg-black/20 transition-colors"
+              >
                 <Facebook className="w-5 h-5 text-black" />
               </Link>
             </div>
@@ -68,18 +71,30 @@ export default function Footer() {
               SERVICES
             </h3>
             <div className="space-y-3">
-              <a href="#" className="block text-gray-700 hover:text-black transition-colors">
+              <Link
+                href="/about"
+                className="block text-gray-700 hover:text-black transition-colors"
+              >
                 About Kelly
-              </a>
-              <Link href="/properties" className="block text-gray-700 hover:text-black transition-colors">
+              </Link>
+              <Link
+                href="/properties"
+                className="block text-gray-700 hover:text-black transition-colors"
+              >
                 Featured Properties
               </Link>
-              <a href="#" className="block text-gray-700 hover:text-black transition-colors">
+              <Link
+                href="/buyer-services"
+                className="block text-gray-700 hover:text-black transition-colors"
+              >
                 Buyer Services
-              </a>
-              <a href="#" className="block text-gray-700 hover:text-black transition-colors">
+              </Link>
+              <Link
+                href="/seller-services"
+                className="block text-gray-700 hover:text-black transition-colors"
+              >
                 Seller Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -91,15 +106,15 @@ export default function Footer() {
               © 2024 Kelly Baldwin Real Estate. All rights reserved.
             </div>
             <div className="flex space-x-8 text-sm text-gray-600">
-              <a href="#" className="hover:text-black transition-colors">
+              <Link href="/privacy-policy" className="hover:text-black transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-black transition-colors">
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-black transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-black transition-colors">
+              </Link>
+              <Link href="/equal-housing-opportunity" className="hover:text-black transition-colors">
                 Equal Housing Opportunity
-              </a>
+              </Link>
             </div>
           </div>
         </div>
