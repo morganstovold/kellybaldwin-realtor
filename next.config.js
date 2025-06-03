@@ -6,7 +6,18 @@ const jiti = createJiti(fileURLToPath(import.meta.url));
 jiti.import("./app/env.ts");
 
 /** @type {import('next').NextConfig} */
-const config = {};
+const config = {
+    images: {
+        remotePatterns: [
+            {
+                hostname: "barimedia.rapmls.com",
+            },
+            {
+                hostname: "media.mlslmedia.com",
+            }
+        ]
+    }
+};
 
 export default config;
  

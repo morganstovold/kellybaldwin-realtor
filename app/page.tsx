@@ -4,6 +4,7 @@ import MeetKelly from "../components/MeetKelly";
 import FeaturedListings from "../components/FeaturedListings";
 import Testimonials from "../components/Testimonials";
 import WorkWithKelly from "../components/WorkWithKelly";
+import SeedingPanel from "./components/SeedingPanel";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Testimonials />
       <WorkWithKelly />
       <Footer />
+      <SeedingPanel />
     </div>
   );
 }
