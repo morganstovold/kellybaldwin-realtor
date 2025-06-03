@@ -25,7 +25,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PropertyPageProps) {
-  const property = await getPropertyBySlug(params.slug);
+  const { slug } = await params;
+  const property = await getPropertyBySlug(slug);
 
   if (!property) {
     return {
@@ -44,13 +45,14 @@ export async function generateMetadata({ params }: PropertyPageProps) {
 }
 
 interface PropertyPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function PropertyPage({ params }: PropertyPageProps) {
-  const property = await getPropertyBySlug(params.slug);
+  const { slug } = await params;
+  const property = await getPropertyBySlug(slug);
 
   if (!property) {
     notFound();
