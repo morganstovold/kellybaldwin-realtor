@@ -16,24 +16,6 @@ export default function PropertiesHero() {
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/20"></div>
-
-        {/* Property Stats Overlay */}
-        <div className="absolute bottom-6 left-6 right-6">
-          <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
-            <div className="flex items-center justify-between text-sm">
-              <div className="flex items-center gap-2">
-                <Home size={16} className="text-gray-600" />
-                <span className="text-gray-800 font-medium">
-                  Premium Properties
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin size={16} className="text-gray-600" />
-                <span className="text-gray-800">Solano County & Bay Area</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">

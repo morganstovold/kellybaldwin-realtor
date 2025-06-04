@@ -7,6 +7,9 @@ jiti.import("./app/env.ts");
 
 /** @type {import('next').NextConfig} */
 const config = {
+    experimental: {
+        scrollRestoration: true,
+    },
     images: {
         remotePatterns: [
             {

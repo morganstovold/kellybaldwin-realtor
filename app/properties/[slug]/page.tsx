@@ -5,6 +5,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { getPropertiesSlugs, getPropertyBySlug } from "@/lib/db/queries";
 import PropertyHero from "@/components/PropertyHero";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export const revalidate = 300;
 
@@ -76,7 +77,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-full bg-white">
       {/* Property Hero Section */}
       <PropertyHero property={property} />
 
@@ -287,6 +288,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

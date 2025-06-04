@@ -42,6 +42,11 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
     }).format(new Date(date));
   };
 
+  const formatBathrooms = (bathrooms: string) => {
+    const num = parseFloat(bathrooms);
+    return num === 1 ? "1 bath" : `${num} baths`;
+  };
+
   return (
     <div className="w-full flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen">
@@ -63,7 +68,7 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-        <div className="max-w-xl flex flex-col gap-4 sm:gap-6">
+        <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex items-center text-gray-600 text-sm">
             <MapPin size={16} className="mr-2" />
             <span>
@@ -75,12 +80,15 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
             {property.address}
           </h1>
 
-          {/* quick stats beds, baths, sqft */}
-
           <div className="text-3xl md:text-4xl font-serif text-black">
             {formatPrice(property.price)}
           </div>
-          <div className="flex flex-row gap-6 justify-center text-sm text-gray-600">
+
+          <div className="flex flex-row gap-6 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <Calendar size={16} />
+              <span>Listed {formatDate(property.listingDate)}</span>
+            </div>
             <div className="flex items-center gap-2">
               <Bed size={16} />
               <span>{property.bedrooms} beds</span>
@@ -92,17 +100,6 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
             <div className="flex items-center gap-2">
               <Square size={16} />
               <span>{property.squareFeet} sqft</span>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Home size={16} />
-              <span>{property.propertyType}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              <span>Listed {formatDate(property.listingDate)}</span>
             </div>
           </div>
 
