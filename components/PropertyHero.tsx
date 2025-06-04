@@ -41,12 +41,6 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
       day: "numeric",
     }).format(new Date(date));
   };
-
-  const formatBathrooms = (bathrooms: string) => {
-    const num = parseFloat(bathrooms);
-    return num === 1 ? "1 bath" : `${num} baths`;
-  };
-
   return (
     <div className="w-full flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen">

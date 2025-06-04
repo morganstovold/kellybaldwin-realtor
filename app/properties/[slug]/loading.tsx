@@ -1,4 +1,4 @@
-import { MapPin, Bed, Bath, Square, Home, Calendar, Car } from "lucide-react";
+import { MapPin, Bed, Bath, Square, Home, Calendar } from "lucide-react";
 
 export default function PropertyLoading() {
   return (

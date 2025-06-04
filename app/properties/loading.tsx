@@ -1,5 +1,3 @@
-import { MapPin, Home } from "lucide-react";
-
 export default function PropertiesLoading() {
   return (
     <div className="min-h-screen bg-white">
