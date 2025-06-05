@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="h-full">
       <Hero />
-      <MeetKelly />
       <FeaturedListings />
+      <MeetKelly />
       <Testimonials />
       <WorkWithKelly />
       <Footer />

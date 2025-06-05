@@ -1,6 +1,7 @@
 import Image from "next/image";
 import KellyBaldwin from "@/public/interior-1.webp";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,26 +16,32 @@ export default function Hero() {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-        <div className="max-w-xl flex flex-col gap-4 sm:gap-6 text-center lg:text-left">
+        <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
             KELLY BALDWIN
             <span className="absolute -left-1 -z-10 -bottom-8 sm:-bottom-12 text-8xl sm:text-9xl md:text-[120px] lg:text-[180px] font-light opacity-3 tracking-normal select-none hidden sm:block">
               KELLY
             </span>
           </h1>
-          <p className="text-base sm:text-lg leading-relaxed">
-            A third-generation Realtor and branch manager for eXp Realty in Benicia. 
-            Known as "The Dedicated Realtor Making a Difference in Her Community," 
-            Kelly brings years of experience and unwavering passion to help turn 
-            houses into homes and dreams into reality.
+          <p className="text-sm sm:text-base leading-relaxed">
+            A third-generation Realtor and branch manager for eXp Realty in
+            Benicia. Known as "The Dedicated Realtor Making a Difference in Her
+            Community," Kelly brings years of experience and unwavering passion
+            to help turn houses into homes and dreams into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="/about"
+            >
               About Kelly
-            </Button>
-            <Button size="lg" className="w-full sm:w-auto">
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "default" })}
+              href="/contact"
+            >
               Contact Kelly
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

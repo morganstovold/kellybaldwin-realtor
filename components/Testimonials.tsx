@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import Link from "next/link";
 
 const buyerTestimonials = [
   {
@@ -162,9 +163,9 @@ export default function Testimonials() {
           <p className="text-lg text-gray-600 mb-6">
             Ready to join Kelly&apos;s satisfied clients?
           </p>
-          <Button size="lg">
+          <Link className={buttonVariants({ variant: "outline" })} href="/contact">
             Contact Kelly
-          </Button>
+          </Link>
         </div>
       </div>
     </section>

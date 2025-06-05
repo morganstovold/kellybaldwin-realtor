@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import BackgroundImage from "@/public/interior-1.webp";
+import Link from "next/link";
 
 export default function WorkWithKelly() {
   return (
@@ -29,13 +30,16 @@ export default function WorkWithKelly() {
         </p>
 
         <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Ready to make your Bay Area real estate dreams a reality? Let&apos;s start
-          your journey today.
+          Ready to make your Bay Area real estate dreams a reality? Let&apos;s
+          start your journey today.
         </p>
 
-        <Button size="lg" variant="outline">
+        <Link
+          className={buttonVariants({ variant: "outline" })}
+          href="/contact"
+        >
           Contact Kelly
-        </Button>
+        </Link>
       </div>
     </section>
   );

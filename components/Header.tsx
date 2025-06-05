@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 // import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -24,7 +24,8 @@ export default function Header({ scrolled }: { scrolled: boolean }) {
     { href: "/", label: "Home" },
     { href: "/properties", label: "Properties" },
     { href: "/about", label: "About Kelly" },
-    { href: "/services", label: "Services" },
+    { href: "/buyer-information", label: "Buyer Information" },
+    { href: "/seller-information", label: "Seller Information" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -80,10 +81,12 @@ export default function Header({ scrolled }: { scrolled: boolean }) {
               </SheetContent>
             </Sheet>
 
-            <Button variant="ghost" className="text-lg">
-              <span className="hidden sm:inline">Contact Kelly</span>
-              <span className="sm:hidden">Contact</span>
-            </Button>
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="/contact"
+            >
+              Contact Kelly
+            </Link>
           </div>
         </motion.div>
       </div>

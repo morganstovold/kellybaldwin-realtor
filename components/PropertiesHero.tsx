@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export default function PropertiesHero() {
   return (
@@ -18,7 +18,7 @@ export default function PropertiesHero() {
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-        <div className="max-w-xl flex flex-col gap-4 sm:gap-6 text-center lg:text-left">
+        <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
             FIND YOUR
             <br />
@@ -28,22 +28,24 @@ export default function PropertiesHero() {
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg leading-relaxed text-gray-600">
+          <p className="text-sm sm:text-base leading-relaxed text-gray-600">
             Discover exceptional properties throughout the greater Bay Area.
             From modern family homes to charming Victorians, explore our curated
-            collection of premium listings in Solano County&apos;s most desirable
-            neighborhoods.
+            collection of premium listings in Solano County&apos;s most
+            desirable neighborhoods.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Link href="#properties-grid">
-              <Button size="lg" className="w-full sm:w-auto">
-                View All Properties
-              </Button>
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="#properties-grid"
+            >
+              View All Properties
             </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                Contact Kelly
-              </Button>
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="/contact"
+            >
+              Contact Kelly
             </Link>
           </div>
         </div>

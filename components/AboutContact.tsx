@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Calendar } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutContact() {
   return (
@@ -55,12 +56,12 @@ export default function AboutContact() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="px-8">
+            <Link className={buttonVariants({ variant: "outline" })} href="/contact">
               Contact Kelly
-            </Button>
-            <Button size="lg" variant="outline" className="px-8">
+            </Link>
+            <Link className={buttonVariants({ variant: "outline" })} href="/properties">
               View All Properties
-            </Button>
+            </Link>
           </div>
 
           {/* Personal Note */}

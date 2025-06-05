@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Bed, Bath, Square, Home, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { searchProperties } from "@/lib/db/queries";
 import PropertiesHero from "@/components/PropertiesHero";
 import Footer from "@/components/Footer";
@@ -74,75 +74,62 @@ export default async function PropertiesPage({
               <Search size={20} className="mr-2" />
               <span className="font-medium">Filter Properties:</span>
             </div>
-
-            {/* Filter Links - Simple URL-based filtering for now */}
-            <Link href="/properties">
-              <Button
-                variant={!resolvedSearchParams.city ? "default" : "outline"}
-                size="sm"
-              >
-                All Cities
-              </Button>
+            <Link
+              className={buttonVariants({
+                variant: searchFilters.city ? "default" : "outline",
+              })}
+              href="/properties"
+            >
+              All Cities
             </Link>
-            <Link href="/properties?city=Vallejo">
-              <Button
-                variant={
-                  resolvedSearchParams.city === "Vallejo"
-                    ? "default"
-                    : "outline"
-                }
-                size="sm"
-              >
-                Vallejo
-              </Button>
+            <Link
+              className={buttonVariants({
+                variant:
+                  searchFilters.city === "Vallejo" ? "default" : "outline",
+              })}
+              href="/properties?city=Vallejo"
+            >
+              Vallejo
             </Link>
-            <Link href="/properties?city=Fairfield">
-              <Button
-                variant={
-                  resolvedSearchParams.city === "Fairfield"
-                    ? "default"
-                    : "outline"
-                }
-                size="sm"
-              >
-                Fairfield
-              </Button>
+            <Link
+              className={buttonVariants({
+                variant:
+                  searchFilters.city === "Fairfield" ? "default" : "outline",
+              })}
+              href="/properties?city=Fairfield"
+            >
+              Fairfield
             </Link>
-            <Link href="/properties?city=Benicia">
-              <Button
-                variant={
-                  resolvedSearchParams.city === "Benicia"
-                    ? "default"
-                    : "outline"
-                }
-                size="sm"
-              >
-                Benicia
-              </Button>
+            <Link
+              className={buttonVariants({
+                variant:
+                  searchFilters.city === "Benicia" ? "default" : "outline",
+              })}
+              href="/properties?city=Benicia"
+            >
+              Benicia
             </Link>
-            <Link href="/properties?propertyType=Single Family">
-              <Button
-                variant={
-                  resolvedSearchParams.propertyType === "Single Family"
+            <Link
+              className={buttonVariants({
+                variant:
+                  searchFilters.propertyType === "Single Family"
                     ? "default"
-                    : "outline"
-                }
-                size="sm"
-              >
-                Single Family
-              </Button>
+                    : "outline",
+              })}
+              href="/properties?propertyType=Single Family"
+            >
+              Single Family
             </Link>
-            <Link href="/properties?propertyType=Condo">
-              <Button
-                variant={
-                  resolvedSearchParams.propertyType === "Condo"
+            <Link
+              className={buttonVariants({
+                variant:
+                  searchFilters.propertyType === "Condo"
                     ? "default"
-                    : "outline"
-                }
-                size="sm"
-              >
-                Condos
-              </Button>
+                    : "outline",
+              })}
+              href="/properties?propertyType=Condo"
+            >
+              Condos
             </Link>
           </div>
         </div>
@@ -254,14 +241,13 @@ export default async function PropertiesPage({
             {properties.length === limit && (
               <div className="flex justify-center">
                 <Link
+                  className={buttonVariants({ variant: "outline" })}
                   href={`/properties?${new URLSearchParams({
                     ...resolvedSearchParams,
                     page: (currentPage + 1).toString(),
                   }).toString()}`}
                 >
-                  <Button variant="outline" size="lg">
-                    Load More Properties
-                  </Button>
+                  Load More Properties
                 </Link>
               </div>
             )}
@@ -279,13 +265,17 @@ export default async function PropertiesPage({
                 : "Properties will appear here once they are added to the database."}
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/properties">
-                <Button variant="outline" size="lg">
-                  Clear Filters
-                </Button>
+              <Link
+                className={buttonVariants({ variant: "outline" })}
+                href="/properties"
+              >
+                Clear Filters
               </Link>
-              <Link href="/contact">
-                <Button size="lg">Contact Kelly</Button>
+              <Link
+                className={buttonVariants({ variant: "outline" })}
+                href="/contact"
+              >
+                Contact Kelly
               </Link>
             </div>
           </div>

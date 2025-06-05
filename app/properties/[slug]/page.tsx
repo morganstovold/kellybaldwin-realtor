@@ -237,12 +237,9 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               </h3>
 
               <div className="space-y-4 mb-8">
-                <Button size="lg" className="w-full">
+                <Link className={buttonVariants({ variant: "outline" })} href="/contact">
                   Contact Kelly
-                </Button>
-                <Button size="lg" variant="outline" className="w-full">
-                  Schedule Viewing
-                </Button>
+                </Link>
               </div>
 
               <div className="border-t pt-6">

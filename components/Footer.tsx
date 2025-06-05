@@ -6,7 +6,7 @@ import expLogo from "@/public/Black eXp Realty.jpg";
 export default function Footer() {
   return (
     <footer className="bg-white text-black border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-6">
           {/* Brand Section */}
@@ -93,16 +93,16 @@ export default function Footer() {
                     Featured Properties
                   </Link>
                   <Link
-                    href="/buyer-services"
+                    href="/buyer-information"
                     className="block text-gray-700 hover:text-black transition-colors"
                   >
-                    Buyer Services
+                    Buyer Information
                   </Link>
                   <Link
-                    href="/seller-services"
+                    href="/seller-information"
                     className="block text-gray-700 hover:text-black transition-colors"
                   >
-                    Seller Services
+                    Seller Information
                   </Link>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-600 text-sm text-center md:text-left">
-                © 2024 Kelly Baldwin Real Estate. All rights reserved.
+              © 2024 Kelly Baldwin Real Estate. All rights reserved.
             </div>
             <div className="flex space-x-8 text-sm text-gray-600">
               <Link

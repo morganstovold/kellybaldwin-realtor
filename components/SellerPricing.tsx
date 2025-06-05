@@ -1,36 +1,51 @@
-import { BarChart3, TrendingUp, Calculator, MapPin, Clock, Target } from "lucide-react";
+import {
+  BarChart3,
+  TrendingUp,
+  Calculator,
+  MapPin,
+  Clock,
+  Target,
+} from "lucide-react";
+import Link from "next/link";
+import { buttonVariants } from "./ui/button";
 
 const pricingFactors = [
   {
     icon: BarChart3,
     title: "Comparative Market Analysis",
-    description: "Detailed analysis of recent sales of similar properties in your neighborhood"
+    description:
+      "Detailed analysis of recent sales of similar properties in your neighborhood",
   },
   {
     icon: TrendingUp,
     title: "Current Market Trends",
-    description: "Real-time market conditions, inventory levels, and buyer demand patterns"
+    description:
+      "Real-time market conditions, inventory levels, and buyer demand patterns",
   },
   {
     icon: Calculator,
     title: "Property Condition Assessment",
-    description: "Evaluation of your home's unique features, upgrades, and condition"
+    description:
+      "Evaluation of your home's unique features, upgrades, and condition",
   },
   {
     icon: MapPin,
     title: "Location Premium",
-    description: "Impact of schools, amenities, commute access, and neighborhood desirability"
+    description:
+      "Impact of schools, amenities, commute access, and neighborhood desirability",
   },
   {
     icon: Clock,
     title: "Timing Strategy",
-    description: "Optimal listing timing based on seasonal patterns and market cycles"
+    description:
+      "Optimal listing timing based on seasonal patterns and market cycles",
   },
   {
     icon: Target,
     title: "Pricing Psychology",
-    description: "Strategic pricing to attract maximum buyer interest and competition"
-  }
+    description:
+      "Strategic pricing to attract maximum buyer interest and competition",
+  },
 ];
 
 export default function SellerPricing() {
@@ -45,15 +60,19 @@ export default function SellerPricing() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Pricing your home correctly from the start is crucial for a successful sale. 
-              I use comprehensive market analysis and proven strategies to maximize your return.
+              Pricing your home correctly from the start is crucial for a
+              successful sale. I use comprehensive market analysis and proven
+              strategies to maximize your return.
             </p>
           </div>
 
           {/* Pricing Factors */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {pricingFactors.map((factor, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-8 border border-gray-200">
+              <div
+                key={index}
+                className="bg-gray-50 rounded-lg p-8 border border-gray-200"
+              >
                 <div className="w-16 h-16 bg-black/10 rounded-full flex items-center justify-center mb-6">
                   <factor.icon className="w-8 h-8 text-black" />
                 </div>
@@ -85,7 +104,7 @@ export default function SellerPricing() {
                     <li>• Generate fewer showings</li>
                   </ul>
                 </div>
-                
+
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-2 text-green-600">
                     Correctly Priced Homes
@@ -106,7 +125,8 @@ export default function SellerPricing() {
               </h4>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  I&apos;ll provide you with a comprehensive market analysis that includes:
+                  I&apos;ll provide you with a comprehensive market analysis
+                  that includes:
                 </p>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start gap-2">
@@ -128,7 +148,8 @@ export default function SellerPricing() {
                 </ul>
                 <div className="pt-4 border-t border-gray-200">
                   <p className="text-black font-medium italic">
-                    &quot;The right price attracts the right buyers and maximizes your return.&quot;
+                    &quot;The right price attracts the right buyers and
+                    maximizes your return.&quot;
                   </p>
                 </div>
               </div>
@@ -141,20 +162,21 @@ export default function SellerPricing() {
               GET YOUR FREE HOME VALUATION
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-              Curious about your home&apos;s current market value? I&apos;ll provide a comprehensive 
-              analysis with no obligation, so you can make informed decisions about your next move.
+              Curious about your home&apos;s current market value? I&apos;ll
+              provide a comprehensive analysis with no obligation, so you can
+              make informed decisions about your next move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors">
-                Request Home Valuation
-              </button>
-              <button className="px-8 py-3 border border-black text-black rounded-md hover:bg-gray-50 transition-colors">
-                Schedule Pricing Consultation
-              </button>
+              <Link
+                className={buttonVariants({ variant: "outline" })}
+                href="/contact"
+              >
+                Contact Kelly
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-} 
+}

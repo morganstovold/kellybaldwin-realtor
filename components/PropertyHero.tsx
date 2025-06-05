@@ -1,6 +1,14 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { MapPin, Bed, Bath, Square, Home, Calendar, ChevronLeft } from "lucide-react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import {
+  MapPin,
+  Bed,
+  Bath,
+  Square,
+  Home,
+  Calendar,
+  ChevronLeft,
+} from "lucide-react";
 import Link from "next/link";
 
 interface Property {
@@ -108,12 +116,18 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="w-full sm:w-auto">
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="/contact"
+            >
               Contact Kelly
-            </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="/contact"
+            >
               Schedule Viewing
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
