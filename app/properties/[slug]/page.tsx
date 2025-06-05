@@ -6,6 +6,7 @@ import { getPropertiesSlugs, getPropertyBySlug } from "@/lib/db/queries";
 import PropertyHero from "@/components/PropertyHero";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
 export const revalidate = 300;
 
@@ -237,7 +238,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               </h3>
 
               <div className="space-y-4 mb-8">
-                <Link className={buttonVariants({ variant: "outline" })} href="/contact">
+                <Link className={cn(buttonVariants(), "w-full")} href="/contact">
                   Contact Kelly
                 </Link>
               </div>
