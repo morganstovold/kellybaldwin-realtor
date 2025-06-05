@@ -245,7 +245,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               <div className="border-t pt-6">
                 <h4 className="font-medium mb-4">Contact Kelly Baldwin</h4>
                 <div className="text-sm text-gray-600 space-y-3">
-                  <p>eXp Realty Branch Manager</p>
+                  <p>Branch Manager - eXp Realty of California, Inc</p>
                   <p>Third-Generation Realtor</p>
                   <div className="pt-3 space-y-2">
                     <p>

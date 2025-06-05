@@ -21,7 +21,7 @@ export default function Footer() {
                 Community&quot;
               </p>
               <p className="text-gray-700 leading-relaxed max-w-md">
-                A third-generation Realtor and branch manager for eXp Realty in
+                A third-generation Realtor and branch manager for eXp Realty of California, Inc in
                 Benicia with deep local knowledge and a commitment to making
                 your real estate experience both enjoyable and successful.
               </p>
@@ -67,8 +67,9 @@ export default function Footer() {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-gray-600 mt-1" />
                     <div className="text-gray-700">
-                      <div>Bay Area</div>
-                      <div>Solano County</div>
+                      <div>560 1st Street B206</div>
+                      <div>Benicia, CA 94510</div>
+                      <div className="text-sm text-gray-600 mt-1">Serving Bay Area & Solano County</div>
                     </div>
                   </div>
                 </div>
@@ -85,6 +86,12 @@ export default function Footer() {
                     className="block text-gray-700 hover:text-black transition-colors"
                   >
                     About Kelly
+                  </Link>
+                  <Link
+                    href="/awards"
+                    className="block text-gray-700 hover:text-black transition-colors"
+                  >
+                    Awards & Recognition
                   </Link>
                   <Link
                     href="/properties"

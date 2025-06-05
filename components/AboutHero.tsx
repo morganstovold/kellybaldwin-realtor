@@ -17,7 +17,7 @@ export default function AboutHero() {
         <div className="absolute inset-0 bg-black/10"></div>
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16 bg-white">
-        <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
+        <div className="max-w-xl flex flex-col gap-6 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
             ABOUT KELLY
             <span className="absolute -left-1 -z-10 -bottom-8 sm:-bottom-12 text-8xl sm:text-9xl md:text-[120px] lg:text-[140px] font-light opacity-3 tracking-normal select-none hidden sm:block">
@@ -26,13 +26,13 @@ export default function AboutHero() {
           </h1>
           <p className="text-sm sm:text-base leading-relaxed text-gray-700">
             Meet Kelly Baldwin, a third-generation Realtor and branch manager
-            for eXp Realty in Benicia. Known as &quot;The Dedicated Realtor Making a
+            for eXp Realty of California, Inc in Benicia. Known as &quot;The Dedicated Realtor Making a
             Difference in Her Community,&quot; Kelly has established herself as a
             trustworthy and passionate real estate professional with deep local
             knowledge and an unwavering commitment to turning your real estate
             dreams into reality.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               className={buttonVariants({ variant: "outline" })}
               href="/properties"

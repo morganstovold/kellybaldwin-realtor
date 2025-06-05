@@ -41,8 +41,8 @@ export default function AboutContact() {
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
-              <div className="text-sm font-medium text-gray-900 mb-1">Service Area</div>
-              <div className="text-sm text-gray-600">Bay Area & Solano County</div>
+              <div className="text-sm font-medium text-gray-900 mb-1">Office</div>
+              <div className="text-sm text-gray-600">560 1st Street B206, Benicia, CA 94510</div>
             </div>
 
             <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg">

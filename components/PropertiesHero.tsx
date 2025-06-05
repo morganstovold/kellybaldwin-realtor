@@ -18,7 +18,7 @@ export default function PropertiesHero() {
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-        <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
+        <div className="max-w-xl flex flex-col gap-6 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
             FIND YOUR
             <br />
@@ -34,7 +34,7 @@ export default function PropertiesHero() {
             collection of premium listings in Solano County&apos;s most
             desirable neighborhoods.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               className={buttonVariants({ variant: "outline" })}
               href="#properties-grid"
@@ -42,7 +42,7 @@ export default function PropertiesHero() {
               View All Properties
             </Link>
             <Link
-              className={buttonVariants({ variant: "outline" })}
+              className={buttonVariants()}
               href="/contact"
             >
               Contact Kelly

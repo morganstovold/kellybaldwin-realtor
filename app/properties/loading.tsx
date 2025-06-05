@@ -12,7 +12,7 @@ export default function PropertiesLoading() {
         </div>
         
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-          <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
+          <div className="max-w-xl flex flex-col gap-6 text-center lg:text-left">
             {/* Title Skeleton - Matching "FIND YOUR DREAM HOME" */}
             <div className="relative mb-8 sm:mb-12 z-10">
               <div className="h-12 lg:h-16 w-64 bg-gray-200 rounded animate-pulse mb-2"></div>
@@ -30,7 +30,7 @@ export default function PropertiesLoading() {
             </div>
             
             {/* Action Buttons Skeleton */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="h-12 w-full sm:w-40 bg-gray-200 rounded animate-pulse"></div>
               <div className="h-12 w-full sm:w-40 bg-gray-200 rounded animate-pulse"></div>
             </div>

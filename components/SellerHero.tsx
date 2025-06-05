@@ -17,7 +17,7 @@ export default function SellerHero() {
         <div className="absolute inset-0 bg-black/10"></div>
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16 bg-white">
-        <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
+        <div className="max-w-xl flex flex-col gap-6 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
             FOR SELLERS
             <span className="absolute -left-1 -z-10 -bottom-8 sm:-bottom-12 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light opacity-3 tracking-normal select-none hidden sm:block">

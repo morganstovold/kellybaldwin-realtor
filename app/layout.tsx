@@ -12,14 +12,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Kelly Baldwin - Bay Area Real Estate Expert | eXp Realty",
+  title: "Kelly Baldwin - Bay Area Real Estate Expert | eXp Realty of California, Inc",
   description:
-    "Helping you go from stressed to sold in the Bay Area. Professional real estate services for buying, selling, and referrals with Kelly Baldwin at eXp Realty.",
+    "Helping you go from stressed to sold in the Bay Area. Professional real estate services for buying, selling, and referrals with Kelly Baldwin at eXp Realty of California, Inc.",
   keywords:
-    "Bay Area real estate, Kelly Baldwin, eXp Realty, home buying, home selling, real estate agent, California real estate",
+    "Bay Area real estate, Kelly Baldwin, eXp Realty of California Inc, home buying, home selling, real estate agent, California real estate",
   authors: [{ name: "Kelly Baldwin" }],
   creator: "Kelly Baldwin",
-  publisher: "eXp Realty",
+  publisher: "eXp Realty of California, Inc",
   openGraph: {
     title: "Kelly Baldwin - Bay Area Real Estate Expert",
     description: "Helping you go from stressed to sold in the Bay Area",

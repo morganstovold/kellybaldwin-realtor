@@ -19,7 +19,7 @@ export default function ContactPage() {
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-6 py-12 sm:p-8 md:p-12 lg:p-16">
-          <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
+          <div className="max-w-xl flex flex-col gap-6 text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
               CONTACT KELLY
               <span className="absolute -left-12 -z-10 -bottom-8 sm:-bottom-12 text-8xl sm:text-9xl md:text-[120px] lg:text-[160px] font-light opacity-3 tracking-normal select-none hidden sm:block">
@@ -89,8 +89,9 @@ export default function ContactPage() {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-serif tracking-wider mb-2">SERVICE AREAS</h3>
-                <p className="text-gray-600">Bay Area & Solano County</p>
+                <h3 className="text-xl font-serif tracking-wider mb-2">OFFICE</h3>
+                <p className="text-gray-600">560 1st Street B206, Benicia, CA 94510</p>
+                <p className="text-sm text-gray-500">Serving Bay Area & Solano County</p>
               </div>
             </div>
 
@@ -108,7 +109,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-12 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left Column - Form Introduction */}
@@ -135,8 +136,8 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-serif tracking-wider mb-1">Kelly Baldwin</h3>
-                    <p className="text-gray-600 mb-3">eXp Realty Branch Manager</p>
+                    <h3 className="text-xl font-serif tracking-wider mb-1">Kelly Baldwin, Realtor®</h3>
+                    <p className="text-gray-600 mb-3">Branch Manager - eXp Realty of California, Inc</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       &quot;The Dedicated Realtor Making a Difference in Her Community&quot;
                     </p>
@@ -272,7 +273,7 @@ export default function ContactPage() {
             <p className="text-xl text-gray-300 mb-12 leading-relaxed">
               Sometimes a conversation is the best way to begin. Let&apos;s discuss your real estate goals and how I can help make them a reality.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="outline" size="lg" asChild className="border-white text-white hover:bg-white hover:text-black">
                 <a href="tel:7073196392">
                   <Phone className="w-5 h-5 mr-2" />

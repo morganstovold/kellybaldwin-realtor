@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function WorkWithKelly() {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-16 lg:py-24 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -34,12 +34,14 @@ export default function WorkWithKelly() {
           start your journey today.
         </p>
 
-        <Link
-          className={buttonVariants({ variant: "outline" })}
-          href="/contact"
-        >
-          Contact Kelly
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+          <Link
+            className={buttonVariants({ variant: "outline" })}
+            href="/contact"
+          >
+            Contact Kelly
+          </Link>
+        </div>
       </div>
     </section>
   );

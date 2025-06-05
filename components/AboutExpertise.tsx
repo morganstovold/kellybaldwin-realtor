@@ -137,8 +137,8 @@ export default function AboutExpertise() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-medium text-gray-900 mb-1">Service Area</div>
-                  <div className="text-gray-700">Bay Area & Solano County</div>
+                  <div className="font-medium text-gray-900 mb-1">Office</div>
+                  <div className="text-gray-700">560 1st Street B206, Benicia, CA 94510</div>
                 </div>
               </div>
 

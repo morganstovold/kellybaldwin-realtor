@@ -55,7 +55,7 @@ export default function PropertyLoading() {
             </div>
             
             {/* Action Buttons Skeleton */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="h-12 w-full sm:w-40 bg-gray-200 rounded animate-pulse"></div>
               <div className="h-12 w-full sm:w-40 bg-gray-200 rounded animate-pulse"></div>
             </div>

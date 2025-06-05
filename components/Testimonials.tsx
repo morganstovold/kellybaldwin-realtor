@@ -117,10 +117,10 @@ export default function Testimonials() {
   );
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-4xl font-serif tracking-widest mb-4">
             CLIENT TESTIMONIALS
           </h2>
@@ -159,13 +159,15 @@ export default function Testimonials() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
+        <div className="text-center mt-8">
           <p className="text-lg text-gray-600 mb-6">
             Ready to join Kelly&apos;s satisfied clients?
           </p>
-          <Link className={buttonVariants({ variant: "outline" })} href="/contact">
-            Contact Kelly
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link className={buttonVariants({ variant: "outline" })} href="/contact">
+              Contact Kelly
+            </Link>
+          </div>
         </div>
       </div>
     </section>

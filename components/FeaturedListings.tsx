@@ -25,10 +25,10 @@ export default async function FeaturedListings() {
   };
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif tracking-widest mb-4">
             FEATURED LISTINGS
           </h2>
@@ -148,7 +148,7 @@ export default async function FeaturedListings() {
         </div>
 
         {/* Call to Action */}
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <Link className={buttonVariants({ variant: "outline" })} href="/properties">
             View All Properties
           </Link>

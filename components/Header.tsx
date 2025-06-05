@@ -25,6 +25,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/properties", label: "Properties" },
     { href: "/about", label: "About Kelly" },
+    { href: "/awards", label: "Awards & Recognition" },
     { href: "/buyer-information", label: "Buyer Information" },
     { href: "/seller-information", label: "Seller Information" },
     { href: "/contact", label: "Contact" },
