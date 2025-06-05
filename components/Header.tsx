@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -17,8 +17,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/BALDWIN LOGO MARKS white_Kelly alone.png";
 
-export default function Header({ scrolled }: { scrolled: boolean }) {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -28,6 +29,33 @@ export default function Header({ scrolled }: { scrolled: boolean }) {
     { href: "/seller-information", label: "Seller Information" },
     { href: "/contact", label: "Contact" },
   ];
+
+  useEffect(() => {
+    const scrollThreshold = 10;
+
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+
+    const handleScroll = () => {
+      if (timeoutId) return;
+
+      timeoutId = setTimeout(() => {
+        const isScrolled = window.scrollY > scrollThreshold;
+        if (isScrolled !== scrolled) {
+          setScrolled(isScrolled);
+        }
+        timeoutId = null;
+      }, 10);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [scrolled]);
 
   return (
     <motion.header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-sans">

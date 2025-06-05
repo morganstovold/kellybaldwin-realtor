@@ -52,7 +52,7 @@ export default function AboutStory() {
                   sense of community that drives everything I do.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Beyond real estate, I've dedicated countless hours volunteering with local 
+                  Beyond real estate, I&apos;ve dedicated countless hours volunteering with local 
                   organizations throughout Solano County. This community involvement has given 
                   me an intimate understanding of what makes each neighborhood special and 
                   reinforced my passion for helping others find their perfect place to call home.
@@ -73,8 +73,8 @@ export default function AboutStory() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <p className="text-gray-700 italic text-center">
-                    "Kelly's vibrant personality and professional expertise make her a standout 
-                    Realtor who goes above and beyond for her clients and community."
+                    &quot;Kelly&apos;s vibrant personality and professional expertise make her a standout 
+                    Realtor who goes above and beyond for her clients and community.&quot;
                   </p>
                 </div>
               </div>

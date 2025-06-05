@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import BackgroundImage from "@/public/interior-1.webp";
 import Link from "next/link";
 

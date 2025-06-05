@@ -1,4 +1,4 @@
-import { Home, Key, TrendingUp, Users, Heart, Eye, Handshake, Clock, Phone, Mail, MapPin, Calendar } from "lucide-react";
+import { Home, Key, TrendingUp, Users, Heart, Eye, Handshake, Clock, Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const expertiseAreas = [
@@ -116,7 +116,7 @@ export default function AboutExpertise() {
                 &quot;The Dedicated Realtor Making a Difference in Her Community&quot;
               </div>
               <p className="text-gray-600 mb-8">
-                Ready to start your real estate journey? Let's connect.
+                Ready to start your real estate journey? Let&apos;s connect.
               </p>
             </div>
 

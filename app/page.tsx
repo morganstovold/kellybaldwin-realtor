@@ -7,7 +7,7 @@ import WorkWithKelly from "../components/WorkWithKelly";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div className="h-full overflow-x-hidden">
       <Hero />
       <FeaturedListings />
       <MeetKelly />

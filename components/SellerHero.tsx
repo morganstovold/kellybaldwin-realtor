@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import SellerHeroImage from "@/public/kelly-6.webp"; // Reusing existing image
 import Link from "next/link";
 

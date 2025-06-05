@@ -117,4 +117,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* completely hide scrollbar on all browsers */
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

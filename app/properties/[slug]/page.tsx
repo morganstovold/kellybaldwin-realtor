@@ -77,7 +77,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
   };
 
   return (
-    <div className="h-full bg-white">
+    <div className="h-full bg-white overflow-x-hidden">
       {/* Property Hero Section */}
       <PropertyHero property={property} />
 

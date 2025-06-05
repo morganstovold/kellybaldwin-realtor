@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { MapPin, Bed, Bath, Square, Home } from "lucide-react";
 import { getFeaturedProperties } from "@/lib/db/queries";
 
@@ -102,7 +102,7 @@ export default async function FeaturedListings() {
                   <div className="flex items-center gap-4 text-sm text-gray-600">
                     <div className="flex items-center">
                       <Bed size={16} className="mr-1" />
-                      <span>
+                      <span>  
                         {property.bedrooms}{" "}
                         {property.bedrooms === 1 ? "bed" : "beds"}
                       </span>

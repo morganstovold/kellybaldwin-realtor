@@ -5,7 +5,7 @@ import SellerContact from "@/components/SellerContact";
 
 export default function SellerServices() {
   return (
-    <div className="h-full">
+    <div className="h-full overflow-x-hidden">
       <SellerHero />
       <SellerProcess />
       <SellerContact />

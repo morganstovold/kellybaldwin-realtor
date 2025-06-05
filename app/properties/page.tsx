@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Bed, Bath, Square, Home, Search } from "lucide-react";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { searchProperties } from "@/lib/db/queries";
 import PropertiesHero from "@/components/PropertiesHero";
 import Footer from "@/components/Footer";
@@ -62,7 +62,7 @@ export default async function PropertiesPage({
   };
 
   return (
-    <div className="h-full bg-white">
+    <div className="h-full bg-white overflow-x-hidden">
       {/* Hero Section */}
       <PropertiesHero />
 

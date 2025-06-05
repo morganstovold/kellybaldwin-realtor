@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Clock, Send, Calendar } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import Image from "next/image";
 import Kelly from "@/public/kelly-3.webp";
 import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
-    <div className="h-full bg-white">
+    <div className="h-full bg-white overflow-x-hidden">
       {/* Hero Section - Similar to homepage */}
       <div className="w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen">
@@ -22,12 +22,12 @@ export default function ContactPage() {
           <div className="max-w-xl flex flex-col gap-4 text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-serif tracking-widest relative mb-8 sm:mb-12 z-10">
               CONTACT KELLY
-              <span className="absolute -left-1 -z-10 -bottom-8 sm:-bottom-12 text-8xl sm:text-9xl md:text-[120px] lg:text-[180px] font-light opacity-3 tracking-normal select-none hidden sm:block">
+              <span className="absolute -left-12 -z-10 -bottom-8 sm:-bottom-12 text-8xl sm:text-9xl md:text-[120px] lg:text-[160px] font-light opacity-3 tracking-normal select-none hidden sm:block">
                 CONTACT
               </span>
             </h1>
             <p className="text-sm sm:text-base leading-relaxed mb-6">
-              Ready to start your real estate journey? Let's connect and discuss how I can help you achieve your goals in the Bay Area and Solano County.
+              Ready to start your real estate journey? Let&apos;s connect and discuss how I can help you achieve your goals in the Bay Area and Solano County.
             </p>
             
             {/* Quick Contact Options */}
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 leading-relaxed">
-              I'm here to help with all your real estate needs. Available 7 days a week to serve you.
+              I&apos;m here to help with all your real estate needs. Available 7 days a week to serve you.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 </h2>
                 <div className="w-24 h-0.5 bg-black mb-6"></div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Whether you're buying, selling, or have questions about the market, I'd love to hear from you. Tell me about your real estate goals and let's start the conversation.
+                  Whether you&apos;re buying, selling, or have questions about the market, I&apos;d love to hear from you. Tell me about your real estate goals and let&apos;s start the conversation.
                 </p>
               </div>
 
@@ -138,7 +138,7 @@ export default function ContactPage() {
                     <h3 className="text-xl font-serif tracking-wider mb-1">Kelly Baldwin</h3>
                     <p className="text-gray-600 mb-3">eXp Realty Branch Manager</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
-                      "The Dedicated Realtor Making a Difference in Her Community"
+                      &quot;The Dedicated Realtor Making a Difference in Her Community&quot;
                     </p>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                     htmlFor="interest"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    I'm interested in...
+                    I&apos;m interested in...
                   </label>
                   <select
                     id="interest"
@@ -270,7 +270,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-24 h-0.5 bg-white mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-              Sometimes a conversation is the best way to begin. Let's discuss your real estate goals and how I can help make them a reality.
+              Sometimes a conversation is the best way to begin. Let&apos;s discuss your real estate goals and how I can help make them a reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button variant="outline" size="lg" asChild className="border-white text-white hover:bg-white hover:text-black">

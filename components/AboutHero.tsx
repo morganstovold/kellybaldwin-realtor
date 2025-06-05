@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import KellyPhoto from "@/public/kelly-6.webp";
 import Link from "next/link";
 
@@ -26,8 +26,8 @@ export default function AboutHero() {
           </h1>
           <p className="text-sm sm:text-base leading-relaxed text-gray-700">
             Meet Kelly Baldwin, a third-generation Realtor and branch manager
-            for eXp Realty in Benicia. Known as "The Dedicated Realtor Making a
-            Difference in Her Community," Kelly has established herself as a
+            for eXp Realty in Benicia. Known as &quot;The Dedicated Realtor Making a
+            Difference in Her Community,&quot; Kelly has established herself as a
             trustworthy and passionate real estate professional with deep local
             knowledge and an unwavering commitment to turning your real estate
             dreams into reality.

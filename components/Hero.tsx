@@ -1,6 +1,6 @@
 import Image from "next/image";
 import KellyBaldwin from "@/public/interior-1.webp";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Hero() {
@@ -25,8 +25,8 @@ export default function Hero() {
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
             A third-generation Realtor and branch manager for eXp Realty in
-            Benicia. Known as "The Dedicated Realtor Making a Difference in Her
-            Community," Kelly brings years of experience and unwavering passion
+            Benicia. Known as &quot;The Dedicated Realtor Making a Difference in Her
+            Community,&quot; Kelly brings years of experience and unwavering passion
             to help turn houses into homes and dreams into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">

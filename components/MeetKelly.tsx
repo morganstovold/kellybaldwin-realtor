@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Kelly from "@/public/kelly-3.webp";
 import Link from "next/link";
 
@@ -22,7 +22,7 @@ export default function MeetKelly() {
             <p className="text-lg text-gray-700 leading-relaxed">
               Kelly Baldwin is a third-generation Realtor and branch manager for
               eXp Realty in Benicia. With experience spanning from mortgage and
-              commercial real estate to residential homes, she's passionate
+              commercial real estate to residential homes, she&apos;s passionate
               about helping turn houses into homes and dreams into reality.
             </p>
 

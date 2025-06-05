@@ -1,4 +1,4 @@
-import { Search, FileText, Home, Key, HandHeart, CheckCircle } from "lucide-react";
+  import { Search, FileText, Home, Key, HandHeart, CheckCircle } from "lucide-react";
 
 const buyingSteps = [
   {
@@ -51,7 +51,7 @@ export default function BuyerProcess() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Purchasing a home is one of life's most significant investments. I'll guide you 
+              Purchasing a home is one of life&apos;s most significant investments. I&apos;ll guide you 
               through every step to make the process smooth and successful.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function BuyerProcess() {
                 FIRST-TIME BUYER SPECIALIST
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-                Buying your first home can feel overwhelming, but it doesn't have to be. 
+                Buying your first home can feel overwhelming, but it doesn&apos;t have to be. 
                 I specialize in guiding first-time buyers through every step, explaining 
                 everything in detail so you feel confident and informed.
               </p>
@@ -101,7 +101,7 @@ export default function BuyerProcess() {
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-3">Patient Guidance</h4>
                   <p className="text-gray-600 text-sm">
-                    No question is too small. I'm here to support you with patience 
+                    No question is too small. I&apos;m here to support you with patience 
                     and understanding throughout your journey.
                   </p>
                 </div>
@@ -115,7 +115,7 @@ export default function BuyerProcess() {
                 <div>
                   <h4 className="font-serif text-lg tracking-wider mb-3">Lifetime Support</h4>
                   <p className="text-gray-600 text-sm">
-                    My relationship with you doesn't end at closing. I'm here for 
+                    My relationship with you doesn&apos;t end at closing. I&apos;m here for 
                     ongoing advice and future real estate needs.
                   </p>
                 </div>

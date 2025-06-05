@@ -1,14 +1,6 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
-import {
-  MapPin,
-  Bed,
-  Bath,
-  Square,
-  Home,
-  Calendar,
-  ChevronLeft,
-} from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { MapPin, Bed, Bath, Square, Home, Calendar } from "lucide-react";
 import Link from "next/link";
 
 interface Property {
