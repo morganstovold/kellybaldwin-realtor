@@ -23,13 +23,14 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-base sm:text-lg leading-relaxed">
-            Your trusted Bay Area real estate expert. Solano County native with
-            deep local knowledge and a commitment to making your real estate
-            experience enjoyable and successful.
+            A third-generation Realtor and branch manager for eXp Realty in Benicia. 
+            Known as "The Dedicated Realtor Making a Difference in Her Community," 
+            Kelly brings years of experience and unwavering passion to help turn 
+            houses into homes and dreams into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              Learn More
+              About Kelly
             </Button>
             <Button size="lg" className="w-full sm:w-auto">
               Contact Kelly

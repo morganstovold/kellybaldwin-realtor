@@ -163,7 +163,7 @@ export default function Testimonials() {
             Ready to join Kelly&apos;s satisfied clients?
           </p>
           <Button size="lg">
-            Start Your Journey Today
+            Contact Kelly
           </Button>
         </div>
       </div>

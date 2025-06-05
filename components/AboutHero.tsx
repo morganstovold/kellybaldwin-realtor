@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import KellyPhoto from "@/public/kelly-6.webp";
+import Link from "next/link";
 
 export default function AboutHero() {
   return (
@@ -24,17 +25,23 @@ export default function AboutHero() {
             </span>
           </h1>
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-            Solano County native with deep local knowledge and an unwavering 
-            commitment to turning your real estate dreams into reality. Experience 
-            the difference of working with someone who truly understands the Bay Area market.
+            Meet Kelly Baldwin, a third-generation Realtor and branch manager for eXp Realty 
+            in Benicia. Known as "The Dedicated Realtor Making a Difference in Her Community," 
+            Kelly has established herself as a trustworthy and passionate real estate professional 
+            with deep local knowledge and an unwavering commitment to turning your real estate 
+            dreams into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              View Properties
-            </Button>
-            <Button size="lg" className="w-full sm:w-auto">
-              Contact Kelly
-            </Button>
+            <Link href="/properties">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                View All Properties
+              </Button>
+            </Link>
+            <Link href="tel:+17073196392">
+              <Button size="lg" className="w-full sm:w-auto">
+                Contact Kelly
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

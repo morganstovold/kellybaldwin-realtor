@@ -33,7 +33,7 @@ export default function BuyerContact() {
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div className="text-sm font-medium text-gray-900 mb-1">Email Me</div>
-              <div className="text-sm text-gray-600">kelly@kellybaldwin.com</div>
+              <div className="text-sm text-gray-600">Kelly@BaldwinRealEstateTeam.com</div>
             </div>
 
             <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
@@ -56,13 +56,13 @@ export default function BuyerContact() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="px-8">
-              Schedule Buyer Consultation
+              Contact Kelly
+            </Button>
+            <Button size="lg" variant="outline" className="px-8">
+              View All Properties
             </Button>
             <Button size="lg" variant="outline" className="px-8">
               Get Pre-Qualified
-            </Button>
-            <Button size="lg" variant="outline" className="px-8">
-              Search Properties
             </Button>
           </div>
 

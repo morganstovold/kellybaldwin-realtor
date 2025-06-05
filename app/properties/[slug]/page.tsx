@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { Home } from "lucide-react";
+import { ChevronLeft, Home } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { getPropertiesSlugs, getPropertyBySlug } from "@/lib/db/queries";
 import PropertyHero from "@/components/PropertyHero";
@@ -82,13 +82,22 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
       <PropertyHero property={property} />
 
       {/* Property Details Content */}
-      <div className="container mx-auto px-6 lg:px-8 py-16">
+      <div className="container flex flex-col gap-4 mx-auto px-6 lg:px-8 py-16">
+        <div className="mb-2">
+          <Link
+            href="/properties"
+            className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
+          >
+            <ChevronLeft size={20} className="mr-2" />
+            Back to Properties
+          </Link>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col gap-12">
             {/* Description */}
             {property.publicDescription && (
-              <div className="mb-12">
+              <div>
                 <h2 className="text-2xl font-serif mb-6">
                   Property Description
                 </h2>
@@ -101,7 +110,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
             )}
 
             {/* Property Details */}
-            <div className="mb-12">
+            <div>
               <h2 className="text-2xl font-serif mb-6">Property Details</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -167,7 +176,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
 
             {/* Virtual Tour */}
             {property.hasVirtualTour && property.virtualTourUrl && (
-              <div className="mb-12">
+              <div>
                 <h2 className="text-2xl font-serif mb-6">Virtual Tour</h2>
                 <div className="bg-gray-50 rounded-lg p-8 text-center">
                   <Home size={48} className="mx-auto text-gray-400 mb-4" />
@@ -192,7 +201,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
 
             {/* Additional Photos Section */}
             {property.photos && property.photos.length > 0 && (
-              <div className="mb-12">
+              <div>
                 <h2 className="text-2xl font-serif mb-6">Property Photos</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {property.photos.slice(0, 6).map((photo, index) => (
@@ -222,31 +231,31 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="bg-gray-50 rounded-lg p-8 sticky top-6">
+            <div className="bg-gray-50 rounded-lg p-8 sticky top-22">
               <h3 className="text-xl font-serif mb-6">
                 Interested in this property?
               </h3>
 
               <div className="space-y-4 mb-8">
                 <Button size="lg" className="w-full">
-                  Schedule a Showing
+                  Contact Kelly
                 </Button>
                 <Button size="lg" variant="outline" className="w-full">
-                  Share Property
+                  Schedule Viewing
                 </Button>
               </div>
 
               <div className="border-t pt-6">
                 <h4 className="font-medium mb-4">Contact Kelly Baldwin</h4>
                 <div className="text-sm text-gray-600 space-y-3">
-                  <p>Licensed Real Estate Professional</p>
-                  <p>Solano County Specialist</p>
+                  <p>eXp Realty Branch Manager</p>
+                  <p>Third-Generation Realtor</p>
                   <div className="pt-3 space-y-2">
                     <p>
-                      <strong>Phone:</strong> (707) 555-0123
+                      <strong>Phone:</strong> (707) 319-6392
                     </p>
                     <p>
-                      <strong>Email:</strong> kelly@kellybaldwinrealtor.com
+                      <strong>Email:</strong> Kelly@BaldwinRealEstateTeam.com
                     </p>
                   </div>
                 </div>

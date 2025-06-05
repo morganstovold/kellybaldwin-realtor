@@ -13,8 +13,8 @@ export default function AboutStory() {
             </h2>
             <div className="w-24 h-0.5 bg-black mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Born and raised in Solano County, I&apos;ve witnessed firsthand the growth 
-              and transformation of the Bay Area real estate market.
+              Third-generation Realtor with deep roots in Benicia and an unwavering 
+              commitment to community service.
             </p>
           </div>
 
@@ -38,38 +38,45 @@ export default function AboutStory() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-serif tracking-wider mb-4">
-                  A LIFELONG LOCAL
+                  A LIFELONG COMMITMENT
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Growing up in Solano County gave me an intimate understanding of 
-                  what makes each neighborhood special. From the historic charm of 
-                  Benicia to the family-friendly communities of Fairfield, I know 
-                  the unique character and hidden gems of every area.
+                  My real estate journey started in mortgage in 2001, providing me with a solid 
+                  foundation in finance before transitioning into commercial real estate with a 
+                  focus on 1031 Exchanges. However, it was in residential real estate where I 
+                  found my true calling—helping families turn houses into homes and dreams into reality.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  My journey in real estate began with a simple belief: every family 
-                  deserves to find not just a house, but a true home. This philosophy 
-                  drives everything I do, from the initial consultation to handing 
-                  over the keys.
+                  For over 30 years, Benicia has been home to me, my husband James, and our 
+                  children James and Emily. Our home is filled with laughter, love, and a deep 
+                  sense of community that drives everything I do.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Beyond real estate, I've dedicated countless hours volunteering with local 
+                  organizations throughout Solano County. This community involvement has given 
+                  me an intimate understanding of what makes each neighborhood special and 
+                  reinforced my passion for helping others find their perfect place to call home.
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-2xl font-serif tracking-wider mb-4">
-                  PASSION MEETS EXPERTISE
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  With years of experience in the Bay Area market, I&apos;ve helped 
-                  hundreds of families navigate one of life&apos;s biggest decisions. 
-                  Whether you&apos;re a first-time buyer, growing family, or looking 
-                  to downsize, I bring the expertise and personal attention that 
-                  makes all the difference.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  I believe in building relationships that last long after closing day. 
-                  Many of my clients have become lifelong friends, and there&apos;s nothing 
-                  more rewarding than seeing families thrive in their new homes.
-                </p>
+              {/* Key Stats */}
+              <div className="bg-gray-50 rounded-lg p-6">
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <div className="text-2xl font-serif text-black mb-1">30+</div>
+                    <div className="text-sm text-gray-600">Years in Benicia</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-serif text-black mb-1">3rd Gen</div>
+                    <div className="text-sm text-gray-600">Realtor Legacy</div>
+                  </div>
+                </div>
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <p className="text-gray-700 italic text-center">
+                    "Kelly's vibrant personality and professional expertise make her a standout 
+                    Realtor who goes above and beyond for her clients and community."
+                  </p>
+                </div>
               </div>
             </div>
           </div>

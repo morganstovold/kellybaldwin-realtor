@@ -62,19 +62,8 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-6 py-12 sm:p-8 md:p-12 lg:p-16 sm:mb-16">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-6 py-12 sm:p-8 md:p-12 lg:p-16">
         <div className="flex flex-col gap-4 sm:gap-6">
-          {/* Back Button */}
-          <div className="mb-2">
-            <Link
-              href="/properties"
-              className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
-            >
-              <ChevronLeft size={20} className="mr-2" />
-              Back to Properties
-            </Link>
-          </div>
-
           <div className="flex items-center text-gray-600 text-sm">
             <MapPin size={16} className="mr-2" />
             <span>
@@ -118,12 +107,12 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
           )}
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="w-full sm:w-auto">
-              Schedule Viewing
+              Contact Kelly
             </Button>
             <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              Request Information
+              Schedule Viewing
             </Button>
           </div>
         </div>

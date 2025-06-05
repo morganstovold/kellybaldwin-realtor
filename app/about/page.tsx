@@ -2,7 +2,6 @@ import Footer from "@/components/Footer";
 import AboutHero from "@/components/AboutHero";
 import AboutStory from "@/components/AboutStory";
 import AboutExpertise from "@/components/AboutExpertise";
-import AboutContact from "@/components/AboutContact";
 
 export default function About() {
   return (
@@ -10,7 +9,6 @@ export default function About() {
       <AboutHero />
       <AboutStory />
       <AboutExpertise />
-      <AboutContact />
       <Footer />
     </div>
   );

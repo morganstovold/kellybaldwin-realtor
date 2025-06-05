@@ -37,12 +37,12 @@ export default function PropertiesHero() {
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="#properties-grid">
               <Button size="lg" className="w-full sm:w-auto">
-                Browse Properties
+                View All Properties
               </Button>
             </Link>
             <Link href="/contact">
               <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                Schedule Viewing
+                Contact Kelly
               </Button>
             </Link>
           </div>

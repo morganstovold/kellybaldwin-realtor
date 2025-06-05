@@ -145,7 +145,7 @@ export default async function FeaturedListings() {
           </Link>
           <Link href="/contact">
             <Button size="lg">
-              Schedule a Showing
+              Contact Kelly
             </Button>
           </Link>
         </div>
