@@ -1,6 +1,6 @@
 export default function PropertiesLoading() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-full bg-white overflow-x-hidden">
       {/* Hero Section Skeleton - Matching PropertiesHero */}
       <div className="w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen">
@@ -59,7 +59,7 @@ export default function PropertiesLoading() {
       </div>
 
       {/* Properties Grid Skeleton */}
-      <div className="container mx-auto px-6 lg:px-8 py-16">
+      <div id="properties-grid" className="container mx-auto px-6 lg:px-8 py-16">
         {/* Results Count Skeleton */}
         <div className="mb-12">
           <div className="h-8 w-64 bg-gray-200 rounded animate-pulse mb-2"></div>

@@ -111,10 +111,10 @@ export default function Header() {
             </Sheet>
 
             <Link
-              className={buttonVariants({ variant: "outline" })}
+              className={buttonVariants({ variant: "ghost" })}
               href="/contact"
             >
-              Contact Kelly
+              Contact
             </Link>
           </div>
         </motion.div>

@@ -1,8 +1,8 @@
-import { MapPin, Bed, Bath, Square, Home, Calendar } from "lucide-react";
+import { MapPin, Bed, Bath, Square, Home, Calendar, ChevronLeft } from "lucide-react";
 
 export default function PropertyLoading() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-full bg-white overflow-x-hidden">
       {/* Property Hero Section Skeleton - Matching PropertyHero */}
       <div className="w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen">
@@ -64,12 +64,20 @@ export default function PropertyLoading() {
       </div>
 
       {/* Property Details Content Skeleton */}
-      <div className="container mx-auto px-6 lg:px-8 py-16">
+      <div className="container flex flex-col gap-4 mx-auto px-6 lg:px-8 py-16">
+        {/* Back Button Skeleton */}
+        <div className="mb-2">
+          <div className="inline-flex items-center text-gray-600">
+            <ChevronLeft size={20} className="mr-2" />
+            <div className="h-5 w-32 bg-gray-200 rounded animate-pulse"></div>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content Skeleton */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col gap-12">
             {/* Description Section Skeleton */}
-            <div className="mb-12">
+            <div>
               <div className="h-8 w-48 bg-gray-200 rounded animate-pulse mb-6"></div>
               <div className="space-y-3">
                 {Array.from({ length: 8 }).map((_, i) => (
@@ -84,7 +92,7 @@ export default function PropertyLoading() {
             </div>
 
             {/* Property Details Section Skeleton */}
-            <div className="mb-12">
+            <div>
               <div className="h-8 w-36 bg-gray-200 rounded animate-pulse mb-6"></div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
@@ -107,7 +115,7 @@ export default function PropertyLoading() {
             </div>
 
             {/* Virtual Tour Section Skeleton */}
-            <div className="mb-12">
+            <div>
               <div className="h-8 w-32 bg-gray-200 rounded animate-pulse mb-6"></div>
               <div className="bg-gray-50 rounded-lg p-8 text-center">
                 <Home size={48} className="mx-auto text-gray-300 mb-4" />
@@ -118,7 +126,7 @@ export default function PropertyLoading() {
             </div>
 
             {/* Photos Section Skeleton */}
-            <div className="mb-12">
+            <div>
               <div className="h-8 w-40 bg-gray-200 rounded animate-pulse mb-6"></div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {Array.from({ length: 6 }).map((_, i) => (
@@ -133,13 +141,11 @@ export default function PropertyLoading() {
 
           {/* Sidebar Skeleton */}
           <div className="lg:col-span-1">
-            <div className="bg-gray-50 rounded-lg p-8 sticky top-6">
+            <div className="bg-gray-50 rounded-lg p-8 sticky top-22">
               <div className="h-6 w-48 bg-gray-200 rounded animate-pulse mb-6"></div>
 
               <div className="space-y-4 mb-8">
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div key={i} className="h-12 w-full bg-gray-200 rounded animate-pulse"></div>
-                ))}
+                <div className="h-12 w-full bg-gray-200 rounded animate-pulse"></div>
               </div>
 
               <div className="border-t pt-6">
